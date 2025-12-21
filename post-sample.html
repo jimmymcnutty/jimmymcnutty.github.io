@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Building the AI Factory Narrative - Jasjeet Bajwa</title>
+    <style>
+        /* Same CSS as index.html for consistency */
+        :root {
+            --bg-primary: #3a3a3a;
+            --bg-secondary: #2d2d2d;
+            --text-primary: #e8e8e8;
+            --text-secondary: #b8b8b8;
+            --accent: #6b9bd1;
+            --accent-hover: #89b3e0;
+            --border: #505050;
+            --code-bg: #2d2d2d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        header h1 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+        
+        header h1 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        header h1 a:hover {
+            color: var(--accent-hover);
+        }
+        
+        nav {
+            margin-top: 15px;
+        }
+        
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+        
+        nav a:hover {
+            color: var(--accent-hover);
+        }
+        
+        article h1 {
+            font-size: 32px;
+            font-weight: normal;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .post-meta {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        article p {
+            margin-bottom: 20px;
+        }
+        
+        article h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            letter-spacing: -0.3px;
+        }
+        
+        article h3 {
+            font-size: 20px;
+            font-weight: normal;
+            margin-top: 30px;
+            margin-bottom: 12px;
+        }
+        
+        article a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        
+        article a:hover {
+            color: var(--accent-hover);
+            border-bottom-color: var(--accent-hover);
+        }
+        
+        article ul, article ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        article li {
+            margin-bottom: 10px;
+        }
+        
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 20px;
+            margin: 25px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+        
+        code {
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+        }
+        
+        pre {
+            background-color: var(--code-bg);
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        pre code {
+            padding: 0;
+            background: none;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--accent-hover);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            article h1 {
+                font-size: 26px;
+            }
+            
+            article h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html">Jasjeet Bajwa</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="mailto:jas@jasjeetbajwa.com">Contact</a>
+            </nav>
+        </header>
+        
+        <article>
+            <h1>On Building the AI Factory Narrative</h1>
+            <div class="post-meta">December 15, 2025</div>
+            
+            <p>One of my favorite projects at lakeFS was developing the "AI Factory" strategic narrative. The concept was simple but powerful: just as the Industrial Revolution transformed manufacturing through factories, AI is transforming how organizations build and deploy intelligence.</p>
+            
+            <p>But like any good narrative, it didn't start with the metaphor. It started with a problem.</p>
+            
+            <h2>The Problem: Nobody Understood Data Versioning</h2>
+            
+            <p>When I joined lakeFS, we had a classic product marketing challenge: our technology was genuinely innovative, but explaining <em>why</em> anyone should care was difficult. Data versioning? Most people's eyes glazed over.</p>
+            
+            <p>The engineering team could articulate the technical benefits—reproducibility, experimentation, data quality—but these were features, not outcomes. We needed a story that connected those features to where the industry was going.</p>
+            
+            <h2>Building the Narrative</h2>
+            
+            <p>The breakthrough came from talking to customers. They weren't thinking about "data versioning" in isolation. They were thinking about:</p>
+            
+            <ul>
+                <li>How to move faster with AI/ML development</li>
+                <li>How to ensure their AI systems were reliable</li>
+                <li>How to scale their data science teams</li>
+                <li>How to build infrastructure that would last years, not months</li>
+            </ul>
+            
+            <p>They were building <em>factories</em>. Not literally, of course—but they were industrializing the production of AI systems.</p>
+            
+            <blockquote>
+                "The AI Factory isn't a metaphor. It's a recognition that AI development has shifted from research to production, from experiments to systems, from notebooks to platforms."
+            </blockquote>
+            
+            <h2>Why It Worked</h2>
+            
+            <p>The AI Factory narrative succeeded because it did three things:</p>
+            
+            <ol>
+                <li><strong>It positioned the category.</strong> Data versioning wasn't a nice-to-have tool—it was infrastructure for the AI economy.</li>
+                <li><strong>It created urgency.</strong> If you're building an AI factory, you need version control now, not later.</li>
+                <li><strong>It made buying easier.</strong> CTOs and VPs of Engineering understood factories. They understood infrastructure. They understood why you don't cut corners on the foundation.</li>
+            </ol>
+            
+            <p>The narrative influenced enterprise deals worth over $150K ACV and became company-wide positioning. More importantly, it gave our sales team a way to talk about lakeFS that connected technical features to business outcomes.</p>
+            
+            <h2>Lessons for Product Marketers</h2>
+            
+            <p>Looking back, here's what I learned about building strategic narratives:</p>
+            
+            <p><strong>Start with the customer's world, not yours.</strong> The AI Factory wasn't about us or our product. It was about the transformation our customers were experiencing. We just helped them understand it.</p>
+            
+            <p><strong>Good metaphors travel.</strong> The best part about the AI Factory was how easily it spread. Sales could use it. Marketing could use it. Even customers started using it to explain their own initiatives internally.</p>
+            
+            <p><strong>Narratives need anchoring.</strong> The metaphor worked because it was anchored to something real—the Industrial Revolution, manufacturing, infrastructure. Abstract narratives die quickly.</p>
+            
+            <hr style="border: none; border-top: 1px solid var(--border); margin: 40px 0;">
+            
+            <p><em>Want to talk about product marketing for technical products? <a href="mailto:jas@jasjeetbajwa.com">Send me an email</a>.</em></p>
+        </article>
+        
+        <footer>
+            <p><a href="index.html">← Back to home</a></p>
+        </footer>
+    </div>
+</body>
+</html>
