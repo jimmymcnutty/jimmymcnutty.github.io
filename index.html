@@ -69,17 +69,53 @@
             color: var(--accent-hover);
         }
         
-        /* Main content */
-        main {
-            margin-bottom: 80px;
+        /* Posts */
+        article {
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border);
         }
         
-        .coming-soon {
+        article:last-of-type {
+            border-bottom: none;
+        }
+        
+        article h2 {
+            font-size: 26px;
+            font-weight: normal;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+        
+        article h2 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        article h2 a:hover {
+            color: var(--accent-hover);
+        }
+        
+        .post-meta {
             color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 15px;
             font-style: italic;
-            font-size: 16px;
-            padding: 40px 0;
-            text-align: center;
+        }
+        
+        article p {
+            margin-bottom: 15px;
+        }
+        
+        article a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        
+        article a:hover {
+            color: var(--accent-hover);
+            border-bottom-color: var(--accent-hover);
         }
         
         /* Footer */
@@ -112,6 +148,10 @@
                 font-size: 28px;
             }
             
+            article h2 {
+                font-size: 22px;
+            }
+            
             nav a {
                 display: block;
                 margin-bottom: 10px;
@@ -123,22 +163,21 @@
     <div class="container">
         <header>
             <h1>Everything is a Funnel</h1>
-            <p>Observing markets, marketing, and where things are headed.</p>
+            <p>Observing technology, markets, and marketing.</p>
             <nav>
                 <a href="https://www.linkedin.com/in/jasjeetbajwa/">LinkedIn</a>
-                <a href="mailto:jasjeetbajwa@gmail.com">Contact</a>
+                <a href="/cdn-cgi/l/email-protection#1e747f6d747b7b6a7c7f74697f5e79737f7772307d7173">Contact</a>
             </nav>
         </header>
         
         <main>
-            <div class="coming-soon">
-                Writing coming soon.
-            </div>
+            <article>
+                <h2><a href="software-companies-arent-just-selling-code.html">Software Companies Aren't Just Selling Code</a></h2>
+                <div class="post-meta">February 3, 2026</div>
+                <p>The prevailing bear case for software companies suggests that as AI commoditizes the act of writing code, the proprietary value of software evaporates. If an LLM can generate a bespoke application in seconds, the logic goes, the "moat" of the SaaS business model is breached.</p>
+                <p>This view ignores the fundamental reality of enterprise procurement: companies don't just buy code, they buy a transfer of risk. <a href="software-companies-arent-just-selling-code.html">Read more →</a></p>
+            </article>
         </main>
         
         <footer>
-            <p>&copy; 2025 Everything is a Funnel</p>
-        </footer>
-    </div>
-</body>
-</html>
+            <p>&copy; 2026 Everything is a Funnel</p>
