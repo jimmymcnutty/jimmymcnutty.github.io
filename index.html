@@ -13,8 +13,9 @@
       gtag('js', new Date());
       gtag('config', 'G-KRZNKFVLGS');
     </script>
+    
     <style>
-        /* CSS Variables for easy customization */
+        /* CSS Variables */
         :root {
             --bg-primary: #3a3a3a;
             --bg-secondary: #2d2d2d;
@@ -25,7 +26,6 @@
             --border: #505050;
         }
         
-        /* Base styles */
         * {
             margin: 0;
             padding: 0;
@@ -41,30 +41,30 @@
             padding: 20px;
         }
         
-        /* Container */
         .container {
             max-width: 700px;
             margin: 0 auto;
         }
         
-        /* Header */
         header {
-            margin-bottom: 60px;
-            padding-bottom: 30px;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
             border-bottom: 1px solid var(--border);
         }
         
         header h1 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: normal;
-            margin-bottom: 20px;
-            letter-spacing: -0.5px;
+            margin-bottom: 10px;
         }
         
         header p {
             color: var(--text-secondary);
-            font-size: 18px;
-            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        
+        nav {
+            margin-top: 15px;
         }
         
         nav a {
@@ -78,56 +78,47 @@
             color: var(--accent-hover);
         }
         
-        /* Posts */
-        article {
-            margin-bottom: 50px;
-            padding-bottom: 40px;
+        .post-list {
+            list-style: none;
+        }
+        
+        .post-item {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
             border-bottom: 1px solid var(--border);
         }
         
-        article:last-of-type {
+        .post-item:last-child {
             border-bottom: none;
         }
         
-        article h2 {
-            font-size: 26px;
+        .post-title {
+            font-size: 24px;
             font-weight: normal;
             margin-bottom: 8px;
-            letter-spacing: -0.3px;
         }
         
-        article h2 a {
+        .post-title a {
             color: var(--text-primary);
             text-decoration: none;
         }
         
-        article h2 a:hover {
+        .post-title a:hover {
             color: var(--accent-hover);
         }
         
-        .post-meta {
+        .post-date {
             color: var(--text-secondary);
             font-size: 14px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-style: italic;
         }
         
-        article p {
-            margin-bottom: 15px;
+        .post-excerpt {
+            color: var(--text-secondary);
+            line-height: 1.6;
         }
         
-        article a {
-            color: var(--accent);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-        }
-        
-        article a:hover {
-            color: var(--accent-hover);
-            border-bottom-color: var(--accent-hover);
-        }
-        
-        /* Footer */
         footer {
             margin-top: 60px;
             padding-top: 30px;
@@ -146,24 +137,14 @@
             color: var(--accent-hover);
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             body {
                 font-size: 16px;
                 padding: 15px;
             }
             
-            header h1 {
-                font-size: 28px;
-            }
-            
-            article h2 {
-                font-size: 22px;
-            }
-            
-            nav a {
-                display: block;
-                margin-bottom: 10px;
+            .post-title {
+                font-size: 20px;
             }
         }
     </style>
@@ -172,28 +153,50 @@
     <div class="container">
         <header>
             <h1>Everything is a Funnel</h1>
-            <p>Observing technology, markets, and marketing.</p>
+            <p>Observing technology, markets, and marketing</p>
             <nav>
                 <a href="https://www.linkedin.com/in/jasjeetbajwa/">LinkedIn</a>
-                <a href="/cdn-cgi/l/email-protection#1e747f6d747b7b6a7c7f74697f5e79737f7772307d7173">Contact</a>
+                <a href="mailto:jasjeetbajwa@gmail.com">Contact</a>
             </nav>
         </header>
         
         <main>
-            <article>
-                <h2><a href="from-strategy-to-solvency-ai-factory.html">From Strategy to Solvency: Revisiting the AI Factory Framework</a></h2>
-                <div class="post-meta">February 25, 2026</div>
-                <p>Summer of 2025 is an aeon in the AI era (remember NVIDIA hit $4T?). Back then, I wrote a piece arguing enterprises should build AI Factories. The core thesis was that data infrastructure is the highest leverage investment for driving down the cost of intelligence. I have some confidence that the framework held up. The economics, however, did not.</p>
-                <p>The market is still digesting a set of brutal physical realities putting pressure on the AI Factory model. <a href="from-strategy-to-solvency-ai-factory.html">Read more →</a></p>
-            </article>
-            
-            <article>
-                <h2><a href="software-companies-arent-just-selling-code.html">Software Companies Aren't Just Selling Code</a></h2>
-                <div class="post-meta">February 3, 2026</div>
-                <p>The prevailing bear case for software companies suggests that as AI commoditizes the act of writing code, the proprietary value of software evaporates. If an LLM can generate a bespoke application in seconds, the logic goes, the "moat" of the SaaS business model is breached.</p>
-                <p>This view ignores the fundamental reality of enterprise procurement: companies don't just buy code, they buy a transfer of risk. <a href="software-companies-arent-just-selling-code.html">Read more →</a></p>
-            </article>
+            <ul class="post-list">
+                <li class="post-item">
+                    <h2 class="post-title">
+                        <a href="from-strategy-to-solvency-ai-factory.html">From Strategy to Solvency: Revisiting the AI Factory Framework</a>
+                    </h2>
+                    <div class="post-date">February 25, 2026</div>
+                    <p class="post-excerpt">
+                        The AI Factory framework still explains how enterprises organize their AI infrastructure, but the economic assumptions underneath have shifted dramatically. What looked like a strategic bet in July 2025 now requires rethinking unit economics, allocation constraints, and what "infrastructure investment" actually means.
+                    </p>
+                </li>
+                
+                <li class="post-item">
+                    <h2 class="post-title">
+                        <a href="software-companies-arent-just-selling-code.html">Software Companies Aren't Just Selling Code</a>
+                    </h2>
+                    <div class="post-date">February 3, 2026</div>
+                    <p class="post-excerpt">
+                        The bear case against AI says commoditized code will destroy software margins. But that assumes buyers only want the code itself. What if they're actually buying something else entirely?
+                    </p>
+                </li>
+                
+                <li class="post-item">
+                    <h2 class="post-title">
+                        <a href="the-ai-factory-framework.html">The AI Factory Framework</a>
+                    </h2>
+                    <div class="post-date">July 9, 2025</div>
+                    <p class="post-excerpt">
+                        Traditional factories transform raw materials into products. AI factories transform raw data into intelligence at scale. Here's how enterprises organize their AI infrastructure and why data infrastructure is the highest ROI lever they control.
+                    </p>
+                </li>
+            </ul>
         </main>
         
         <footer>
-            <p>&copy; 2026 Everything is a Funnel</p>
+            <p>&copy; 2026 Everything is a Funnel. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

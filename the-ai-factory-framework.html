@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AI Factory Framework - Everything is a Funnel</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRZNKFVLGS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KRZNKFVLGS');
+    </script>
+    
+    <style>
+        /* CSS Variables */
+        :root {
+            --bg-primary: #3a3a3a;
+            --bg-secondary: #2d2d2d;
+            --text-primary: #e8e8e8;
+            --text-secondary: #b8b8b8;
+            --accent: #6b9bd1;
+            --accent-hover: #89b3e0;
+            --border: #505050;
+            --code-bg: #2d2d2d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        header h1 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+        
+        header h1 a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        header h1 a:hover {
+            color: var(--accent-hover);
+        }
+        
+        nav {
+            margin-top: 15px;
+        }
+        
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+        
+        nav a:hover {
+            color: var(--accent-hover);
+        }
+        
+        article h1 {
+            font-size: 32px;
+            font-weight: normal;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+        
+        .post-meta {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .context-note {
+            color: var(--text-secondary);
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: var(--bg-secondary);
+            border-left: 3px solid var(--accent);
+        }
+        
+        .context-note a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .context-note a:hover {
+            color: var(--accent-hover);
+        }
+        
+        article p {
+            margin-bottom: 20px;
+        }
+        
+        article h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            letter-spacing: -0.3px;
+        }
+        
+        article a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        
+        article a:hover {
+            color: var(--accent-hover);
+            border-bottom-color: var(--accent-hover);
+        }
+        
+        article ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        article li {
+            margin-bottom: 15px;
+        }
+        
+        article ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        article em {
+            font-style: italic;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 40px 0;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--accent-hover);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            article h1 {
+                font-size: 26px;
+            }
+            
+            article h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html">Everything is a Funnel</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://www.linkedin.com/in/jasjeetbajwa/">LinkedIn</a>
+                <a href="mailto:jasjeetbajwa@gmail.com">Contact</a>
+            </nav>
+        </header>
+        
+        <article>
+            <h1>The AI Factory Framework</h1>
+            <div class="post-meta">July 9, 2025</div>
+            
+            <div class="context-note">
+                This is an edited version of a piece I wrote in July 2025. While leading product marketing at a data infrastructure startup, I needed a framework that explains how enterprises organize their AI production systems. For my updated take on how the economics have shifted, see <a href="from-strategy-to-solvency-ai-factory.html">Revisiting the AI Factory Framework</a>.
+            </div>
+            
+            <p>It usually starts the same way. A late night message pops up in the channel:</p>
+            
+            <p><em>"Which v5_final dataset did we use to train the model that just failed in production?"</em></p>
+            
+            <p>You sigh, open three S3 buckets, and begin the forensic treasure hunt.</p>
+            
+            <p>If that sounds familiar, you've already built a portion of an AI Factory. And you should probably finish building it.</p>
+            
+            <h2>What is an AI Factory?</h2>
+            
+            <p>Think of it this way: traditional factories transform raw materials into products. AI factories transform raw data into intelligence at scale, operating like an assembly line with familiar stations.</p>
+            
+            <p>An AI Factory operates through four interconnected stations, each critical to the production pipeline:</p>
+            
+            <p><strong>Compute:</strong> The engine room where GPUs and specialized processors deliver the raw computational power needed for AI workloads. Think of it as the heavy machinery that makes everything else possible.</p>
+            
+            <p><strong>Storage:</strong> The warehouse for your raw materials – training datasets, model checkpoints, and feature stores. Modern AI Factories use object storage systems that can handle petabyte-scale data while maintaining high throughput for parallel training jobs.</p>
+            
+            <p><strong>Training:</strong> The assembly line where raw data gets transformed into intelligence. Here, frameworks like PyTorch and TensorFlow work alongside experiment trackers to iterate on models, test hypotheses, and optimize performance.</p>
+            
+            <p><strong>Deployment:</strong> The shipping dock where finished models get packaged, tested, and released into production. This includes model serving infrastructure, monitoring systems, and the APIs that deliver predictions to your applications.</p>
+            
+            <p>The distinction from traditional data centers matters. While data centers simply store and process information, AI factories are purpose-built for one thing: producing intelligence as their primary output. Success isn't measured in storage capacity or compute cycles, but in the real-time predictions and decisions that drive business value.</p>
+            
+            <h2>Three KPIs for AI Factories</h2>
+            
+            <p>Not long ago, leaders of AI programs stopped asking <em>how many GPUs</em> you provisioned and started asking <em>how much intelligence those GPUs generate</em>. The new KPI, according to semiconductor analyst Ben Bajarin, is $/token – dollars per token of useful inference, which directly links infrastructure spend and model output.</p>
+            
+            <p>As Bajarin put it: <em>"Infrastructure isn't overhead anymore – it's the product."</em></p>
+            
+            <p>This reframing gave every AI leader three scoreboard numbers:</p>
+            
+            <ol>
+                <li><strong>Cost per token:</strong> How much does each prediction cost to generate?</li>
+                <li><strong>Revenue per token:</strong> How much value can each prediction carry?</li>
+                <li><strong>Time-to-monetization:</strong> How quickly can a new model start paying its way?</li>
+            </ol>
+            
+            <p>Now you know which KPIs to use when evaluating the efficiency and value of your AI Factory. But what factors influence these metrics?</p>
+            
+            <p>While some things, like fluctuations in GPU pricing, are out of your control, others are well within your reach and can have a dramatic impact on the quality of inference per token. The highest ROI lever you have? Your data infrastructure.</p>
+            
+            <h2>Why Data Infrastructure Matters</h2>
+            
+            <p>Most AI teams already have sophisticated monitoring for their models and infrastructure. They can tell you GPU utilization down to the second, but ask them which version of the training dataset powers their production model, and you may get three different answers from three different engineers.</p>
+            
+            <p>Your AI factory hemorrhages value in three ways without proper data infrastructure:</p>
+            
+            <p><strong>Wasted time:</strong> Teams waste days playing detective to reconstruct training datasets, burning engineering hours on archaeology instead of innovation.</p>
+            
+            <p><strong>Risk aversion:</strong> Why experiment when every model failure triggers a week-long investigation? Innovation velocity drops as teams play it safe with "known good" datasets.</p>
+            
+            <p><strong>Compliance delays:</strong> When compliance comes calling, models sit in review purgatory because you can't prove what data influenced which decisions.</p>
+            
+            <p>The result: higher costs, slower innovation, and delayed time-to-market. Every missing data trail is money left on the table.</p>
+            
+            <p>If you can't point to, or trace, the exact data that shaped a model, the scoreboard does not move in your favor.</p>
+            
+            <h2>The Ripple Effects</h2>
+            
+            <p>Here's where teams see traceability break down in each station:</p>
+            
+            <ul>
+                <li><strong>ML Pipelines</strong> can't reproduce results because they're pulling from "latest" data that changed overnight</li>
+                <li><strong>Model Training</strong> teams can't compare experiment results because they're not sure which datasets were actually used</li>
+                <li><strong>Model Registries</strong> store models but lose the connection to their training data sources</li>
+                <li><strong>Edge Deployments</strong> fail, but rollback strategies only address model versions, not the data that trained them</li>
+            </ul>
+            
+            <p>Just as a physical assembly line sputters when parts can't be traced, an AI Factory behaves similarly when data is untraceable. But the failures compound:</p>
+            
+            <p><strong>The Cascade Effect:</strong></p>
+            
+            <ul>
+                <li>Engineers stop experimenting because failed experiments can't be debugged</li>
+                <li>Innovation velocity drops as teams play it safe with "known good" datasets</li>
+                <li>Technical debt accumulates as workarounds pile on workarounds</li>
+                <li>Compliance audits stretch from days to months</li>
+                <li>Customer trust erodes when you can't explain why models made certain decisions</li>
+            </ul>
+            
+            <p><strong>The Hidden Costs:</strong> Beyond the obvious productivity hit, poor traceability creates shadow costs. Teams over-provision compute "just to be safe," burning more resources than necessary. Models get completely retrained instead of incrementally updated. Data scientists become data janitors, spending 80% of their time on archaeology instead of innovation.</p>
+            
+            <p>The solution space here – data versioning, lineage tracking, governance tooling – is evolving fast. What isn't changing is the underlying problem: if you can't trace the data that shaped a model, every other investment in your AI Factory is working harder than it should. The teams that solve this first will compound their advantage. The ones that don't will keep paying the hidden tax.</p>
+            
+            <hr>
+        </article>
+        
+        <footer>
+            <p><a href="index.html">← Back to home</a></p>
+        </footer>
+    </div>
+</body>
+</html>
