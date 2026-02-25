@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything is a Funnel</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRZNKFVLGS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KRZNKFVLGS');
+    </script>
+    
+    <style>
+        /* CSS Variables */
+        :root {
+            --bg-primary: #3a3a3a;
+            --bg-secondary: #2d2d2d;
+            --text-primary: #e8e8e8;
+            --text-secondary: #b8b8b8;
+            --accent: #6b9bd1;
+            --accent-hover: #89b3e0;
+            --border: #505050;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        header h1 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+        
+        nav {
+            margin-top: 15px;
+        }
+        
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+        
+        nav a:hover {
+            color: var(--accent-hover);
+        }
+        
+        .post-list {
+            list-style: none;
+        }
+        
+        .post-item {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .post-item:last-child {
+            border-bottom: none;
+        }
+        
+        .post-title {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+        
+        .post-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .post-title a:hover {
+            color: var(--accent-hover);
+        }
+        
+        .post-date {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .post-excerpt {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--accent-hover);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            .post-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Everything is a Funnel</h1>
+            <p>Observing technology, markets, and marketing</p>
+            <nav>
+                <a href="https://www.linkedin.com/in/jasjeetbajwa/">LinkedIn</a>
+                <a href="mailto:jasjeetbajwa@gmail.com">Contact</a>
+            </nav>
+        </header>
+        
+        <main>
+            <ul class="post-list">
+                <li class="post-item">
+                    <h2 class="post-title">
+                        <a href="from-strategy-to-solvency-ai-factory.html">From Strategy to Solvency: Revisiting the AI Factory Framework</a>
+                    </h2>
+                    <div class="post-date">February 25, 2026</div>
+                    <p class="post-excerpt">
+                        The AI Factory framework still explains how enterprises organize their AI infrastructure, but the economic assumptions underneath have shifted dramatically. What looked like a strategic bet in July 2025 now requires rethinking unit economics, allocation constraints, and what "infrastructure investment" actually means.
+                    </p>
+                </li>
+                
+                <li class="post-item">
+                    <h2 class="post-title">
+                        <a href="software-companies-arent-just-selling-code.html">Software Companies Aren't Just Selling Code</a>
+                    </h2>
+                    <div class="post-date">February 3, 2026</div>
+                    <p class="post-excerpt">
+                        The bear case against AI says commoditized code will destroy software margins. But that assumes buyers only want the code itself. What if they're actually buying something else entirely?
+                    </p>
+                </li>
+                
+                <li class="post-item">
+                    <h2 class="post-title">
+                        <a href="the-ai-factory-framework.html">The AI Factory Framework</a>
+                    </h2>
+                    <div class="post-date">July 2025</div>
+                    <p class="post-excerpt">
+                        Traditional factories transform raw materials into products. AI factories transform raw data into intelligence at scale. Here's how enterprises organize their AI infrastructure and why data infrastructure is the highest ROI lever they control.
+                    </p>
+                </li>
+            </ul>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 Everything is a Funnel. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
